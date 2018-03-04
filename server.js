@@ -5,15 +5,32 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne ={
-  title   :'Article one ! Seshan',
-  heading :'Article one',
-  date    :'Date november 20',
-  content :`  <p> OMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera India
-      </p>
+var articles ={
+    articleOne: {
+        title: 'Article one ! Seshan',
+        heading: 'Article one',
+        date: 'Date november 20',
+        content: ` <p> OMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG
+                hey mera India      </p>
+                <p> OMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera India </p>`
+        
+    },
     
-      <p> OMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera India
-      </p>`
+    articleTwo: {
+        title: 'Article two ! Seshan',
+        heading: 'Article two',
+        date: 'Date november 21',
+        content: `<p> OMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera       IndiaOMGhey mera India </p> <p> OMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera India </p>`
+    },
+    
+    articleThree: {
+        title:'Article three ! Seshan',
+        heading:'Article three',
+        date:'Date november 22',
+        content:`<p> OMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera India </p>
+              <p> OMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera IndiaOMG hey mera India </p>`
+    }
+
 };
 
 function createTemplate(data){
