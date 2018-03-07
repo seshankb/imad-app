@@ -1,4 +1,5 @@
 console.log('Loaded!');
+alert('Seshan');
 var element = document.getElementById('change-text');
 element.innerHtml = "Wonder happens in a click";
 
