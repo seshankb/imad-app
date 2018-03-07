@@ -1,6 +1,6 @@
 console.log('Loaded!');
 alert('Seshan');
-var element = document.getElementById('change-text');
+var element = document.getElementById('main-text');
 element.innerHTML = "Wonder happens in a click";
 
 // Moving the image 
