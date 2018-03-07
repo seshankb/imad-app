@@ -1,14 +1,14 @@
 console.log('Loaded!');
 var element = document.getElementById('change-text');
 element.InnerHtml = 'Wonder happens in a click';
-// Moving the image 
-var eleimg = document.getElementById('move');
 
+// Moving the image 
+var eleimg = document.getElementById('moves');
 var marginLeft = 0;
 
 function moveright()
 {
-marginLeft +=10;
+marginLeft = marginLeft + 10;
  img.style.marginLeft = marginLeft + 'px'; 
 }
 
