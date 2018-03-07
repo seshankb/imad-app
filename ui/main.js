@@ -1,6 +1,6 @@
 console.log('Loaded!');
 var element = document.getElementById('change-text');
-element.InnerHtml = 'Wonder happens in a click';
+element.innerHtml = 'Wonder happens in a click';
 
 // Moving the image 
 var eleimg = document.getElementById('moves');
